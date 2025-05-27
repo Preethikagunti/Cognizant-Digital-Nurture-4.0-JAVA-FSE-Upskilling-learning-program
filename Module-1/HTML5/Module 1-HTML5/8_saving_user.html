@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Save User Preferences</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    button {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Select Your Preferred Event Type</h1>
+
+  <label>
+    <input type="radio" name="eventType" value="conference" /> Conference
+  </label><br>
+  <label>
+    <input type="radio" name="eventType" value="workshop" /> Workshop
+  </label><br>
+  <label>
+    <input type="radio" name="eventType" value="webinar" /> Webinar
+  </label><br>
+
+  <button id="clearBtn">Clear Preferences</button>
+
+  <script>
+    const eventRadios = document.querySelectorAll('input[name="eventType"]');
+    const clearBtn = document.getElementById('clearBtn');
+
+    // Load saved preference from localStorage and pre-select it
+    window.onload = () => {
+      const savedEventType = localStorage.getItem('preferredEventType');
+      if (savedEventType) {
+        for (const radio of eventRadios) {
+          if (radio.value === savedEventType) {
+            radio.checked = true;
+            break;
+          }
+        }
+      }
+    };
+
+    // Save selected event type to localStorage when user changes it
+    eventRadios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        if (radio.checked) {
+          localStorage.setItem('preferredEventType', radio.value);
+          // Optionally also save to sessionStorage
+          sessionStorage.setItem('preferredEventType', radio.value);
+        }
+      });
+    });
+
+    // Clear both localStorage and sessionStorage when clicked
+    clearBtn.addEventListener('click', () => {
+      localStorage.removeItem('preferredEventType');
+      sessionStorage.removeItem('preferredEventType');
+
+      // Uncheck all radios
+      eventRadios.forEach(radio => {
+        radio.checked = false;
+      });
+
+      alert('Preferences cleared!');
+    });
+  </script>
+
+</body>
+</html>
