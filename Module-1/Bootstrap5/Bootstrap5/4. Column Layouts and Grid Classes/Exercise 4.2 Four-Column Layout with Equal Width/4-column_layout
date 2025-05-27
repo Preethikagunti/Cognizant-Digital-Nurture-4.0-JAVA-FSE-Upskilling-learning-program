@@ -1,0 +1,8 @@
+<div class="container mt-4">
+  <div class="row row-cols-1 row-cols-sm-4">
+    <div class="col bg-dark text-white p-3">A</div>
+    <div class="col bg-secondary text-white p-3">B</div>
+    <div class="col bg-info text-white p-3">C</div>
+    <div class="col bg-light text-dark p-3">D</div>
+  </div>
+</div>

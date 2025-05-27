@@ -1,0 +1,6 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12 col-md-3 bg-warning p-3">Sidebar</div>
+    <div class="col-12 col-md-9 bg-info text-white p-3">Content Area</div>
+  </div>
+</div>
