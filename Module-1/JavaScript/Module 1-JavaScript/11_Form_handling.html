@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Registration</title>
+  <style>
+    .error { color: red; font-size: 0.9em; }
+    .success { color: green; font-size: 1em; margin-top: 10px; }
+    label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Register for an Event</h1>
+  <form id="registrationForm" novalidate>
+    <label>
+      Name:
+      <input type="text" name="name" />
+      <span class="error" id="nameError"></span>
+    </label>
+
+    <label>
+      Email:
+      <input type="email" name="email" />
+      <span class="error" id="emailError"></span>
+    </label>
+
+    <label>
+      Select Event:
+      <select name="event">
+        <option value="">-- Select an event --</option>
+        <option value="Music Festival">Music Festival</option>
+        <option value="Health Workshop">Health Workshop</option>
+        <option value="Tech Talk">Tech Talk</option>
+      </select>
+      <span class="error" id="eventError"></span>
+    </label>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <div id="resultMessage"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

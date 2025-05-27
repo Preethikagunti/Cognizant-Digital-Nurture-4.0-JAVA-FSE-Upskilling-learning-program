@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Event Portal</title>
+</head>
+<body>
+  <h1>Community Events</h1>
+
+  <!-- Filter & Search -->
+  <label for="categoryFilter">Filter by Category:</label>
+  <select id="categoryFilter">
+    <option value="All">All</option>
+    <option value="Music">Music</option>
+    <option value="Health">Health</option>
+    <option value="Tech">Tech</option>
+  </select>
+
+  <br><br>
+
+  <label for="searchInput">Search by Name:</label>
+  <input type="text" id="searchInput" placeholder="Type event name...">
+
+  <div id="eventContainer" style="margin-top: 20px;"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
