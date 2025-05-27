@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Box Model & Layout Control</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Community Events</h1>
+
+  <div class="eventCard">
+    <h2>Music Festival</h2>
+    <p>Date: July 15, 2025</p>
+  </div>
+
+  <div class="eventCard">
+    <h2>Cooking Workshop</h2>
+    <p>Date: August 5, 2025</p>
+  </div>
+
+  <form>
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" placeholder="Enter your name" /><br /><br />
+
+    <label for="category">Select Category:</label><br />
+    <select id="category" name="category">
+      <option value="">-- Choose --</option>
+      <option value="music">Music</option>
+      <option value="cooking">Cooking</option>
+    </select>
+  </form>
+
+  <h3>Visibility Comparison</h3>
+  <div id="hiddenExample">This box uses <code>visibility: hidden</code></div>
+  <div id="noneExample">This box uses <code>display: none</code></div>
+
+</body>
+</html>

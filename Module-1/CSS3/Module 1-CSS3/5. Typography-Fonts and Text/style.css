@@ -1,0 +1,45 @@
+/* ================================
+   Typography Styling with Google Fonts
+   ================================ */
+
+/* Main title: Bold, uppercase with custom font */
+.main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px 0;
+}
+
+/* Section heading */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #28c8c5;
+  margin-top: 20px;
+}
+
+/* Event titles */
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #730079;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs/descriptions */
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  color: #6ae651;
+  margin: 10px 20px;
+}

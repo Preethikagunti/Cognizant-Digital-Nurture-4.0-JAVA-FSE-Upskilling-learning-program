@@ -1,0 +1,36 @@
+/* =============================
+   Table Styling
+   ============================= */
+.table-section {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;           /* Merge table borders */
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Table header */
+.event-table th {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Table body */
+.event-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #fefefe;
+}
+
+/* Zebra striping */
+.event-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
